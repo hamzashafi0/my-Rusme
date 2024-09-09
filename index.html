@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hamza Resume</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Hamza Resume</h1>
+        <p>software Engineer | Web Developer</p>
+    </header>
+
+    <main>
+        <section id="Personal-info">
+            <h2>Personal Information</h2>
+            <img src="profile picture.JPG" width="150" height="150" alt="profile picture" class="profile picture">
+            <div class="contact-details">
+                 <p><strong>Name: </strong>Muhammad Hamza</p>
+                 <p><strong>Father Name: </strong>Muhammad Shafi</p>
+                 <p><strong>Email: </strong> hamza123@gmail.com</p>
+                <p><strong>Phone:</strong> 0311-2249019</p>
+            </div>
+        </section>
+        <section id="education">
+            <h2>Education</h2>
+            <div class="education-item">
+                <h3>Bachelor's Degree in software  Engineering</h3>
+                <p><strong>University of ABC</strong> - 2020 -  2024</p>
+            </div>
+        </section>
+        <section id="Skills">
+            <h2>Skills</h2>
+            <ul>
+                <li>HTML & CSS</li>
+                <LI>Typescript</LI>
+                <LI>Javascript</LI>
+                <LI>Tailwand css</LI>
+                <li>Python</li>
+                <LI>Next.js</LI>
+            </ul>
+        </section>
+        <SECtion id="work-experience">
+            <h2>Work Experience</h2>
+            <div class="experience -item">
+                <h3>Fronnted Developer</h3>
+                <p>Help of Companions </p>
+            </div>
+        </SECtion>
+        <div id="controls">
+            <button id="toggle-skills">Toggle Skills</button>
+            <button id="toggle-education"> Toggle Education</button>
+            <button id="toggle-experience"> Toggle Experience</button>
+        </div>
+    </main>
+    <script>
+        function toggleSection(sectionId){
+            const section = document.getElementById(sectionId)
+                if (section) {
+                    section.style.display = section.style.display === "none" ? "block" : "none" ;
+                }
+            }
+
+            document.getElementById('toggle-skils')?.addEventListener('click', () => toggleSection('skills'));
+            document.getElementById('toggle-education')?.addEventListener('click',() => toggleSection('education'));
+            document.getElementById('toggle- experience')?.addEventListener('click',() => toggleSection('work-experience'))
+    </script>
+    <script src="index.ts"></script>
+</body>
+</html>
